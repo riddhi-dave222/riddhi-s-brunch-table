@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Riddhi's brunch table</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="page">
+  <h2 class="welcome-heading">Welcome to Riddhi’s Curated Brunch Table</h2>
+  <header class="intro">
+    <p class="scribble">a little brunch party</p>
+    <h1>Riddhi’s<br>brunch party ♡</h1>
+    <p class="instructions">All you need is gossip &amp; This brunch table.<br>Click a dish and listen in.</p>
+    <button id="soundToggle" aria-pressed="false">sound on ♫</button>
+    <button id="stopSound" type="button">stop / pause sound ■</button>
+    <p id="status" aria-live="polite">the table is waiting</p>
+  </header>
+  <div class="copy-panel" aria-label="Brunch table message"><p>All you need is gossip &amp; This brunch table</p></div>
+  <div class="sound-controls"><button id="pauseSound" type="button">Ⅱ Pause sound</button><button id="stopSoundVisible" type="button">■ Stop sound</button></div>
+  <section class="dinner" aria-label="Illustrated brunch table. Click dishes to hear their sounds.">
+    <img class="table-art" src="assets/dinner-table.png" alt="A loose, hand-drawn dinner table full of dishes, glasses, bottles and mismatched chairs">
+    <button class="hotspot noodles" data-food="noodles" aria-label="Hear someone slurp ramen noodles"><span>slurp slurp</span></button>
+    <button class="hotspot fizz" data-food="fizz" aria-label="Hear a fizzy Coke open and fizz"><span>pssst!</span></button>
+    <button class="hotspot tacos" data-food="tacos" aria-label="Hear someone bite a crispy taco"><span>crunch!</span></button>
+    <button class="hotspot soup" data-food="soup" aria-label="Hear someone sip soup"><span>sip sip</span></button>
+    <button class="hotspot fries" data-food="fries" aria-label="Hear crispy fries crunch"><span>crunch</span></button>
+    <button class="hotspot iced" data-food="iced" aria-label="Hear ice clink in a drink"><span>clink clink</span></button>
+  </section>
+  <footer><span id="dishName">nothing yet — choose a dish</span><button id="again" disabled>one more time ↻</button></footer>
+</main>
+<script src="app.js"></script>
+</body></html>
